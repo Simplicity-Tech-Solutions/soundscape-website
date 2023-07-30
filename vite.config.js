@@ -26,7 +26,7 @@ export default defineConfig({
     cors: true,
     /* 
       needs a strict port to match on PHP side
-     change freely, but update in your functions.php to match the same port
+      change freely, but update in your functions.php to match the same port
     */
     strictPort: true,
     port: 3000,

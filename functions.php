@@ -9,7 +9,7 @@ $packageJsonPath = __DIR__ . DIRECTORY_SEPARATOR . 'package.json';
 $packageJsonContent = file_get_contents($packageJsonPath);
 $packageJsonData = json_decode($packageJsonContent, true);
 $current_env = $packageJsonData['config']['environment'];
-define('IS_VITE_DEVELOPMENT', $current_env );
+define('IS_VITE_DEVELOPMENT', $current_env === 'development' ? true : false);
 
 
 include "inc/inc.vite.php";
