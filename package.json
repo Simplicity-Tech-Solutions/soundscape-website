@@ -1,0 +1,46 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "config": {
+    "environment": "development",
+    "development": {
+      "wordpress-name": "solidpress.local",
+      "theme-dir": "wp-content/themes/SolidPress-2.0",
+      "build-dir": "dist",
+      "build-url": "http://localhost:3000/",
+      "dev-port": "3000"
+    },
+    "production": {
+      "wordpress-name": "solidpress.local",
+      "theme-dir": "wp-content/themes/SolidPress-2.0",
+      "build-dir": "dist",
+      "build-url": "http://solidpress.local/wp-content/themes/SolidPress-2.0/dist/"
+    }
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "npm run set-development && cross-env NODE_ENV=development vite",
+    "build": "npm run set-production && vite build && npm run remove-script-tag ",
+    "serve": "vite preview",
+    "remove-script-tag": "sed -i '/<script type=\"module\" crossorigin src=\"http:\\/\\/solidpress.local\\/wp-content\\/themes\\/SolidPress-Template\\/dist\\/main-.*\\.js\"><\\/script>/d' dist/index.html",
+    "set-development": "node solidity-development-mode.js",
+    "set-production": "node solidity-production-mode.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.25",
+    "solid-devtools": "^0.27.3",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9",
+    "vite-plugin-solid": "^2.7.0"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.8.2",
+    "cross-env": "^7.0.3",
+    "solid-js": "^1.7.6",
+    "vite-plugin-live-reload": "^3.0.2",
+    "vite-plugin-ssr": "^0.4.133"
+  }
+}
