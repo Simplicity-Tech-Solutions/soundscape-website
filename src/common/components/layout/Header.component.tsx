@@ -25,11 +25,11 @@ const Header: Component = () => {
                            2xl:px-16 xl:px-16 lg:px-16 md:px-16 sm:px-8 xs:px-8"  style={{ boxShadow: '0 0px 15px #000' }}> 
         {/* Start of Header Identity Section */}
         <div className="flex h-full w-auto">
-          <img className="h-16 w-16" src={ (WEBSITE_ENVIORNMENT === "development" ? "http://localhost:3000" : "" )  + SoundscapeLogoImg}  alt=""/>
+          <img className="h-16 w-16" src={ (WEBSITE_ENVIORNMENT === "development" ? "http://localhost:3000" : "" )  + SoundscapeLogoImg}  alt="Soundscape for Everyone Logo"/>
           <div className="flex-col w-auto px-4
                           2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden">
             <h1 className="w-full text-center text-soundscape-white text-2xl">Soundscape</h1>
-            <h5 className="w-full text-center text-soundscape-white text-sm">for Everyone</h5>
+            <h2 className="w-full text-center text-soundscape-white text-sm">for Everyone</h2>
           </div>
         </div>
         {/* End of Header Identity Section */}
@@ -49,9 +49,10 @@ const Header: Component = () => {
         {/* End of Header Link Section */}
 
         <Show when={showNavDropdown()}
-          fallback={<IoClose className="2xl:hidden xl:hidden lg:flex md:flex sm:flex xs:flex text-white" style={{ 'cursor': 'pointer'}} color="#fff" fill="#fff" size={"2.5rem"}  onClick={() => { setShowNavDropdown(true)}} />}
+          fallback={<IoClose title="Close Navigation Menu"  className="2xl:hidden xl:hidden lg:flex md:flex sm:flex xs:flex text-white" style={{ 'cursor': 'pointer'}} color="#fff" fill="#fff" size={"2.5rem"}  onClick={() => { setShowNavDropdown(true)}} />}
         >
-          <FiMenu className="2xl:hidden xl:hidden lg:flex md:flex sm:flex xs:flex text-white" style={{ 'cursor': 'pointer'}} color="#fff" fill="#fff" size={"2.5rem"} onClick={() => { setShowNavDropdown(false)}} />
+          <FiMenu aria-label="Hello World" aria-describedby="hamburger-menu" className="2xl:hidden xl:hidden lg:flex md:flex sm:flex xs:flex text-white" style={{ 'cursor': 'pointer'}} color="#fff" fill="#fff" size={"2.5rem"} onClick={() => { setShowNavDropdown(false)}} />
+          <p id="hamburger-menu" className="hidden">BOOM POW </p>
         </Show>
       </header>
       
