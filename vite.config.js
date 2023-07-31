@@ -5,15 +5,16 @@ import liveReload from 'vite-plugin-live-reload'
 import { ssr } from 'vite-plugin-ssr/plugin';
 
 const PACKAGE_JSON = require('./package.json');
-const PRODUCTION_CONFIG = PACKAGE_JSON.config.production;
+const DEVELOPMENT_BUILD_CONFIG = PACKAGE_JSON.config.developmentBuild;
 const DEVELOPMENT_CONFIG = PACKAGE_JSON.config.development;
+const LIVE_CONFIG = PACKAGE_JSON.config.production;
 
 
 export default defineConfig({
   root: '',
-  base: process.env.NODE_ENV === 'development' ? DEVELOPMENT_CONFIG['build-url'] : PRODUCTION_CONFIG['build-url'],
+  base: PACKAGE_JSON.config.environment === 'production' ? LIVE_CONFIG['build-url']  : ( PACKAGE_JSON.config.environment === 'development' ? DEVELOPMENT_CONFIG['build-url'] : DEVELOPMENT_BUILD_CONFIG['build-url'] ),
   define: {
-    WEBSITE_ENVIORNMENT: process.env.NODE_ENV === 'development' ? JSON.stringify('development') : JSON.stringify('production')
+    WEBSITE_ENVIORNMENT: JSON.stringify(PACKAGE_JSON.config.environment )
   },
   plugins: [
     /* 
