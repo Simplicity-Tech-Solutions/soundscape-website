@@ -51,8 +51,8 @@ const Header: Component = () => {
         <Show when={showNavDropdown()}
           fallback={<IoClose title="Close Navigation Menu"  className="2xl:hidden xl:hidden lg:flex md:flex sm:flex xs:flex text-white" style={{ 'cursor': 'pointer'}} color="#fff" fill="#fff" size={"2.5rem"}  onClick={() => { setShowNavDropdown(true)}} />}
         >
-          <FiMenu aria-label="Hello World" aria-describedby="hamburger-menu" className="2xl:hidden xl:hidden lg:flex md:flex sm:flex xs:flex text-white" style={{ 'cursor': 'pointer'}} color="#fff" fill="#fff" size={"2.5rem"} onClick={() => { setShowNavDropdown(false)}} />
-          <p id="hamburger-menu" className="hidden">BOOM POW </p>
+          <FiMenu aria-label="Image of a Hamburger Menu" aria-describedby="hamburger-menu" title="Navigation Menu Icon" className="2xl:hidden xl:hidden lg:flex md:flex sm:flex xs:flex text-white" style={{ 'cursor': 'pointer'}} color="#fff" fill="#fff" size={"2.5rem"} onClick={() => { setShowNavDropdown(false)}} />
+          <p id="hamburger-menu" className="hidden">Hamburger Menu Image</p>
         </Show>
       </header>
       
