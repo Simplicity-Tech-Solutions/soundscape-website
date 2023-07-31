@@ -6,6 +6,7 @@ import App from './App';
 import {  Router, Route, Routes } from "@solidjs/router"; // 👈 Import the router
 
 import HomePage  from "./pages/Home/__index.jsx";
+import FeaturesPage  from "./pages/Features/__index.jsx";
 import AboutPage  from "./pages/About/__index.jsx";
 
 const root = document.getElementById('root');
@@ -20,7 +21,7 @@ render(() => (
     <Router> 
       <Routes>
         <Route path="/" component={HomePage} /> {/* 👈 Define the home page route */}
-        <Route path="/about" component={AboutPage} /> {/* 👈 Define the about page route */}
+        <Route path="/features" component={FeaturesPage} /> {/* 👈 Define the about page route */}
       </Routes>
     </Router>
   ), root

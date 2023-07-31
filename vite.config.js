@@ -12,6 +12,9 @@ const DEVELOPMENT_CONFIG = PACKAGE_JSON.config.development;
 export default defineConfig({
   root: '',
   base: process.env.NODE_ENV === 'development' ? DEVELOPMENT_CONFIG['build-url'] : PRODUCTION_CONFIG['build-url'],
+  define: {
+    WEBSITE_ENVIORNMENT: process.env.NODE_ENV === 'development' ? JSON.stringify('development') : JSON.stringify('production')
+  },
   plugins: [
     /* 
       Uncomment the following line to enable solid-devtools.

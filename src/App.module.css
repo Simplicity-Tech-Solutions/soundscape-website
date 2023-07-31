@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: flex;
+
+  flex-flow: row;
+}
