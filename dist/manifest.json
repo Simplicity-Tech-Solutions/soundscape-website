@@ -1,0 +1,154 @@
+{
+  "index.css": {
+    "file": "asset-a0a41626.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "assets": [
+      "asset-3e564385.svg",
+      "asset-82458147.jpg",
+      "asset-ce88df4d.png",
+      "asset-ab5debe4.png",
+      "asset-ade8ba78.png",
+      "asset-61d0e24c.png",
+      "asset-1348c21b.png",
+      "asset-ac518e9f.png",
+      "asset-dd9319ac.png",
+      "asset-492f64d7.png",
+      "asset-60d6da11.jpg",
+      "asset-a62d281d.png",
+      "asset-4d1acd3a.png",
+      "asset-8277e53d.png",
+      "asset-6ddfe7a4.png",
+      "asset-7dc1f8bd.jpg",
+      "asset-edf83331.png",
+      "asset-1252f005.png",
+      "asset-adb090a5.png",
+      "asset-f16136d0.png",
+      "asset-d62e5927.png",
+      "asset-0721234c.png",
+      "asset-2eb00845.png",
+      "asset-2c76bad7.png",
+      "asset-908b0122.png",
+      "asset-6a341264.png"
+    ],
+    "css": [
+      "asset-a0a41626.css"
+    ],
+    "file": "main-ea7a81fc.js",
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "src/assets/favicon.ico": {
+    "file": "asset-0e726a38.ico",
+    "src": "src/assets/favicon.ico"
+  },
+  "src/assets/images/Features_1.png": {
+    "file": "asset-4d1acd3a.png",
+    "src": "src/assets/images/Features_1.png"
+  },
+  "src/assets/images/Features_2.png": {
+    "file": "asset-8277e53d.png",
+    "src": "src/assets/images/Features_2.png"
+  },
+  "src/assets/images/Features_3.png": {
+    "file": "asset-6ddfe7a4.png",
+    "src": "src/assets/images/Features_3.png"
+  },
+  "src/assets/images/Group_Intro.jpg": {
+    "file": "asset-60d6da11.jpg",
+    "src": "src/assets/images/Group_Intro.jpg"
+  },
+  "src/assets/images/HERO.jpg": {
+    "file": "asset-82458147.jpg",
+    "src": "src/assets/images/HERO.jpg"
+  },
+  "src/assets/images/Herofeatures.jpg": {
+    "file": "asset-7dc1f8bd.jpg",
+    "src": "src/assets/images/Herofeatures.jpg"
+  },
+  "src/assets/images/OpenStreetmap.png": {
+    "file": "asset-6a341264.png",
+    "src": "src/assets/images/OpenStreetmap.png"
+  },
+  "src/assets/images/SoundscapeStreetPreview.png": {
+    "file": "asset-edf83331.png",
+    "src": "src/assets/images/SoundscapeStreetPreview.png"
+  },
+  "src/assets/images/Soundscape_Logo.svg": {
+    "file": "asset-3e564385.svg",
+    "src": "src/assets/images/Soundscape_Logo.svg"
+  },
+  "src/assets/images/beaconFeature.png": {
+    "file": "asset-2eb00845.png",
+    "src": "src/assets/images/beaconFeature.png"
+  },
+  "src/assets/images/bgApp.png": {
+    "file": "asset-2c76bad7.png",
+    "src": "src/assets/images/bgApp.png"
+  },
+  "src/assets/images/buildings.png": {
+    "file": "asset-908b0122.png",
+    "src": "src/assets/images/buildings.png"
+  },
+  "src/assets/images/ftPagefeat1.png": {
+    "file": "asset-1252f005.png",
+    "src": "src/assets/images/ftPagefeat1.png"
+  },
+  "src/assets/images/ftPagefeat2.png": {
+    "file": "asset-adb090a5.png",
+    "src": "src/assets/images/ftPagefeat2.png"
+  },
+  "src/assets/images/ftPagefeat3.png": {
+    "file": "asset-f16136d0.png",
+    "src": "src/assets/images/ftPagefeat3.png"
+  },
+  "src/assets/images/iPhone14_First.png": {
+    "file": "asset-a62d281d.png",
+    "src": "src/assets/images/iPhone14_First.png"
+  },
+  "src/assets/images/logo-crna.png": {
+    "file": "asset-61d0e24c.png",
+    "src": "src/assets/images/logo-crna.png"
+  },
+  "src/assets/images/logo-ia-labs.png": {
+    "file": "asset-1348c21b.png",
+    "src": "src/assets/images/logo-ia-labs.png"
+  },
+  "src/assets/images/logo-ncbi.png": {
+    "file": "asset-ade8ba78.png",
+    "src": "src/assets/images/logo-ncbi.png"
+  },
+  "src/assets/images/logo-nvibe.png": {
+    "file": "asset-ac518e9f.png",
+    "src": "src/assets/images/logo-nvibe.png"
+  },
+  "src/assets/images/logo-okeenea.png": {
+    "file": "asset-492f64d7.png",
+    "src": "src/assets/images/logo-okeenea.png"
+  },
+  "src/assets/images/logo-pixelspace.png": {
+    "file": "asset-dd9319ac.png",
+    "src": "src/assets/images/logo-pixelspace.png"
+  },
+  "src/assets/images/logo-rpi.png": {
+    "file": "asset-ab5debe4.png",
+    "src": "src/assets/images/logo-rpi.png"
+  },
+  "src/assets/images/simplicity-main-logo.png": {
+    "file": "asset-ce88df4d.png",
+    "src": "src/assets/images/simplicity-main-logo.png"
+  },
+  "src/assets/images/spatialAudio.png": {
+    "file": "asset-d62e5927.png",
+    "src": "src/assets/images/spatialAudio.png"
+  },
+  "src/assets/images/wayFinding.png": {
+    "file": "asset-0721234c.png",
+    "src": "src/assets/images/wayFinding.png"
+  },
+  "src/assets/logo.svg": {
+    "file": "asset-123b04bc.svg",
+    "src": "src/assets/logo.svg"
+  }
+}
