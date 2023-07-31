@@ -15,7 +15,7 @@
       "wordpress-name": "solidpress.local",
       "theme-dir": "wp-content/themes/SolidPress-2.0",
       "build-dir": "dist",
-      "build-url": "http://soundscape-main-website.local/wp-content/themes/Soundscape-Main-Theme/dist/"
+      "build-url": "https://soundscape.services/wp-content/themes/Soundscape-Main-Theme/dist/"
     }
   },
   "scripts": {
@@ -23,7 +23,7 @@
     "dev": "npm run set-development && cross-env NODE_ENV=development vite && npm run remove-script-tag",
     "build": "npm run set-production && vite build && npm run remove-script-tag ",
     "serve": "vite preview",
-    "remove-script-tag": "sed -i '/<script type=\"module\" crossorigin src=\"http:\\/\\/soundscape-main-website\\.local\\/wp-content\\/themes\\/Soundscape-Main-Theme\\/dist\\/main-.*\\.js\"><\\/script>/d' dist/index.html",
+    "remove-script-tag": "sed -i '/<script type=\"module\" crossorigin src=\"https:\\/\\/soundscape\\.services\\/wp-content\\/themes\\/Soundscape-Main-Theme\\/dist\\/main-.*\\.js\"><\\/script>/d' dist/index.html",
     "set-development": "node solidity-development-mode.js",
     "set-production": "node solidity-production-mode.js"
   },
