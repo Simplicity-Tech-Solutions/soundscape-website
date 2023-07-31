@@ -64,7 +64,7 @@ function FeaturesPage() {
                             <br/><br/>
                             Soundscape Street Preview will help enrich your awareness of familiar places, and help you explore and discover new and unfamiliar places!
                             </p>
-                            <button className="h-auto w-fit bg-navy-blue rounded-primary-btn px-16 py-3 text-white text-laptop font-semibold" onClick={() => { alert("Fix This")}}>Watch the video</button> 
+                            <a className="h-auto w-fit bg-navy-blue rounded-primary-btn px-16 py-3 text-white text-laptop font-semibold" href="https://www.youtube.com/embed/et6FlZXfBvM" target="_blank">Watch the video</a> 
                         </div>
                     </div>
                 </div>

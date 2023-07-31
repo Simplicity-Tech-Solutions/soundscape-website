@@ -1,3 +1,4 @@
+import { createSignal, onMount, For } from "solid-js";
 import logo from '../../assets/logo.svg';
 import styles from '../../App.module.css';
 
@@ -26,16 +27,18 @@ import { Marquee } from "solid-marquee"
 function HomePage() {
   //let domain = (new URL(url));
   //domain = domain.hostname;
-  console.log(WEBSITE_ENVIORNMENT);
-
-
-  function handleDonationClick(){
-    window.open( "https://www.flipcause.com/secure/cause_pdetails/MTc5NDQ1",'_blank')
-  }
+  onMount(() => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
   
-  function handleDropdownClick(value) {
-    setShowNavDropdown(value)
-  }
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth', block: 'center'
+          });
+      });
+    });
+  });
+
 
   return (
     <>
@@ -62,12 +65,12 @@ function HomePage() {
                             tv:text-left desktop:text-left laptop:text-left  s-laptop:text-center  tablet:text-center  mobile:text-center">
                 Explore, discover, and have fun with your own 3D sound map of the word!
               </p>
-              <button className="h-auto w-fit bg-orange rounded-primary-btn px-16 py-4 text-white text-lg font-semibold"  >Donate</button>
+              <a className="h-auto w-fit bg-orange rounded-primary-btn px-16 py-4 text-white text-lg font-semibold" href="https://www.flipcause.com/secure/cause_pdetails/MTc5NDQ1" target="_blank">Donate</a>
           </div>
         </div>
       {/* ------------------------------------------------------------------------------------------------------------------------------------------------ */}
 
-      <div className={`flex flex-col h-auto w-fill-available bg-navy-blue pb-8`} style={{ boxShadow: 'inset 0 0px 10px #000' }}>
+      <div id="consortium" className={`flex flex-col h-auto w-fill-available bg-navy-blue pb-8`} style={{ boxShadow: 'inset 0 0px 10px #000' }}>
         <h3 className="w-full text-white font-bold text-3xl text-center my-8 leading-8" >Meet the Soundscape Consortium</h3>
         <div class="relative flex overflow-x-hidden gap-8">
           <div className="flex py-2 justify-around flex-wrap gap-6">
@@ -122,7 +125,7 @@ function HomePage() {
             <div className="flex flex-col desktop:basis-1/2 laptop:basis-full s-laptop:basis-full tablet-basis:full desktop:pl-10 py-4 gap-6">
               <h4 className="section-title-orange w-fit bg-transparent py-2 font-bold text-orange text-3xl ">Intro to Consortium</h4>
               <p className="font-work-sans text-navy-blue font-medium  mr-16">Following Microsoft’s decision to close down Soundscape, we are delighted to announce that a group of organizations and people, including the co-founders of Soundscape, have come together to not only make it available to existing users, but eventually make it available for everyone! </p>
-              <button className="h-auto w-fit bg-navy-blue rounded-primary-btn px-16 py-3 text-white text-laptop font-semibold" >Learn More</button> 
+              <a className="h-auto w-fit bg-navy-blue rounded-primary-btn px-16 py-3 text-white text-laptop font-semibold" href="#consortium" >Learn More</a> 
             </div>
           </div>
         </div>
@@ -169,11 +172,11 @@ function HomePage() {
         <div className="flex flex-col w-full h-auto bg-navy-blue py-28
                         tv:px-20 desktop:px-20 laptop:px-20 s-laptop:px-20 tablet:px-10 mobile:px-10">
           <div className="flex flex-row flex-wrap w-full h-auto gap-8">
-            <div className="flex flex-col w-1/2 h-auto basis-eList-1">
-              <h4 className="w-fit bg-transparent py-2 font-semibold text-white text-2xl ">Stay up to date on <span className="text-cyan-blue">Soundscape for everyone.</span></h4>
-              <p className="font-work-sans text-white font-medium">Sign up to get the latest updates and news about Soundscape for Everyone.</p>
+            <div className="flex flex-col w-full h-auto basis-full"> {/* was basis-eList-1 */}
+              <h4 className="w-fit bg-transparent py-2 font-semibold text-white text-2xl "><span className="text-cyan-blue">Email List Coming Soon!</span> Stay up to date on <span className="text-cyan-blue">Soundscape.</span></h4>
+              <p className="font-work-sans text-white font-medium">Get ready to sign up to get the latest updates and news about Soundscape for Everyone.</p>
             </div>
-            <div className="flex gap-8 basis-eList-2  
+            <div className="hidden gap-8 basis-eList-2  
                             tv:basis-eList-2  desktop:basis-eList-2  laptop:basis-eList-2  s-laptop:basis-eList-2  tablet:basis-full mobile:basis-full
                             tv:flex-row desktop:flex-row laptop:flex-row s-laptop:flex-row tablet:flex-col mobile:flex-col" >
               <div className="flex flex-col gap-2">
