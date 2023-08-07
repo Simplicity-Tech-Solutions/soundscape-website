@@ -11,8 +11,8 @@ const Header: Component = () => {
 
 
   const [headerItems, setHeaderItems] = createSignal([
-    { name: 'Features', link: '/features' },
-    { name: 'Privacy Policy', link: 'https://ialabs.ie/privacy-policy/' },
+    { name: 'Features', link: '/features', target: '_self', JSX: (<></>) },
+    { name: 'Privacy Policy', link: 'https://ialabs.ie/privacy-policy/', target: '_blank', JSX: ( <span class="screen-reader-only">(opens in a new tab)</span> ) },
   ]);
 
   const [showNavDropdown, setShowNavDropdown] = createSignal(true);
@@ -25,12 +25,14 @@ const Header: Component = () => {
                            2xl:px-16 xl:px-16 lg:px-16 md:px-16 sm:px-8 xs:px-8"  style={{ boxShadow: '0 0px 15px #000' }}> 
         {/* Start of Header Identity Section */}
         <div className="flex h-full w-auto">
-          <img className="h-16 w-16" src={ (WEBSITE_ENVIORNMENT === "development" ? "http://localhost:3000" : "" )  + SoundscapeLogoImg}  alt="Soundscape for Everyone Logo"/>
-          <div className="flex-col w-auto px-4
-                          2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden">
-            <h1 className="w-full text-center text-soundscape-white text-2xl">Soundscape</h1>
-            <h2 className="w-full text-center text-soundscape-white text-sm">for Everyone</h2>
-          </div>
+          <a href="/" className="flex">
+            <img className="h-16 w-16" src={ (WEBSITE_ENVIORNMENT === "development" ? "http://localhost:3000" : "" )  + SoundscapeLogoImg}  alt="Soundscape Community Logo"/>
+            <div className="flex-col w-auto px-4
+                            2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden">
+              <h1 className="w-full text-center text-soundscape-white text-2xl">Soundscape</h1>
+              <h2 className="w-full text-center text-soundscape-white text-sm">Community</h2>
+            </div>
+          </a>
         </div>
         {/* End of Header Identity Section */}
 
@@ -39,8 +41,9 @@ const Header: Component = () => {
           <For each={headerItems()}>
             {(element, index) => {
               return (
-                <a className="flex h-10 w-auto text-soundscape-white text-center items-center text-base px-4 mx-3 cursor-pointer rounded-header-btn hover:bg-soundscape-white hover:text-soundscape-dark-blue " href={element.link as string} key={index}>
+                <a target={element.target} className="flex h-10 w-auto text-soundscape-white text-center items-center text-base px-4 mx-3 cursor-pointer rounded-header-btn hover:bg-soundscape-white hover:text-soundscape-dark-blue " href={element.link as string} key={index} >
                   {element.name}
+                  {element.JSX}
                 </a>
               )
             }}
@@ -64,9 +67,10 @@ const Header: Component = () => {
           <For each={headerItems()}>
             {(element, i) => {
                 return (
-                  <a className={`flex h-10 w-fill-available text-stone-200 text-left text-xl font-bold items-center py-12 px-8 mx-3 cursor-pointer hover:text-soundscape-orange 
+                  <a target={element.target} className={`flex h-10 w-fill-available text-stone-200 text-left text-xl font-bold items-center py-12 px-8 mx-3 cursor-pointer hover:text-soundscape-orange 
                                     ${ i() === 0 ? '' : 'border-t-2 border-t-stone-200' }`} href={element.link as string}  key={i()}>
                     {element.name}
+                    {element.JSX}
                   </a>
                 )
               }}
