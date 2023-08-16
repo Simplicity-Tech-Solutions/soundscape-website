@@ -26,11 +26,10 @@ const Header: Component = () => {
         {/* Start of Header Identity Section */}
         <div className="flex h-full w-auto">
           <a href="/" className="flex">
-            <img className="h-16 w-16" src={ (WEBSITE_ENVIORNMENT === "development" ? "http://localhost:3000" : "" )  + SoundscapeLogoImg}  alt="Soundscape Community Logo"/>
-            <div className="flex-col w-auto px-4
+            <img className="h-16 w-16" src={ (WEBSITE_ENVIORNMENT === "development" ? "http://localhost:3000" : "" )  + SoundscapeLogoImg}  alt="Soundscape Community Logo (Go to Home Page)"/>
+            <div className="flex-col w-auto px-4 items-center justify-center
                             2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden">
-              <h1 className="w-full text-center text-soundscape-white text-2xl">Soundscape</h1>
-              <h2 className="w-full text-center text-soundscape-white text-sm">Community</h2>
+              <h1 className="w-full text-center text-soundscape-white text-2xl leading-6">Soundscape<br/><span className="text-soundscape-white text-sm">Community</span></h1>
             </div>
           </a>
         </div>
@@ -62,7 +61,7 @@ const Header: Component = () => {
       <Show when={!showNavDropdown()}
         fallback={<></>}
       >
-        <nav className="flex flex-col h-auto w-full fixed top-[90px] left-0 z-50 py-4 items-center justify-between bg-soundscape-white
+        <nav className="flex flex-col h-auto w-full fixed top-[85px] left-0 z-50 py-4 items-center justify-between bg-soundscape-white
                            2xl:px-8 xl:px-8 lg:px-8 md:px-8 sm:px-4 xs:px-4 2xl:hidden xl:hidden lg:flex m:flex sm:flex xs:flex"  style={{ boxShadow: '0 15px 25px #222' }}> 
           <For each={headerItems()}>
             {(element, i) => {

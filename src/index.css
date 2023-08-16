@@ -81,3 +81,15 @@ code {
   overflow: hidden;
   white-space: nowrap;
 }
+
+.image-sizing {
+  aspect-ratio: 137/95 !important;
+  height: -webkit-fill-available !important;
+  
+}
+
+.video-sizing {
+  aspect-ratio: 137/95 !important;
+  height: -webkit-fill-available !important;
+  
+}

@@ -1,6 +1,6 @@
 {
   "index.css": {
-    "file": "asset-ce5f9e3e.css",
+    "file": "asset-e516e073.css",
     "src": "index.css"
   },
   "index.html": {
@@ -22,6 +22,7 @@
       "asset-6ddfe7a4.png",
       "asset-7dc1f8bd.jpg",
       "asset-edf83331.png",
+      "asset-5ffb1a55.png",
       "asset-1252f005.png",
       "asset-adb090a5.png",
       "asset-f16136d0.png",
@@ -33,9 +34,9 @@
       "asset-6a341264.png"
     ],
     "css": [
-      "asset-ce5f9e3e.css"
+      "asset-e516e073.css"
     ],
-    "file": "main-f0e22b9a.js",
+    "file": "main-a3e6a3f8.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -74,6 +75,10 @@
   "src/assets/images/SoundscapeStreetPreview.png": {
     "file": "asset-edf83331.png",
     "src": "src/assets/images/SoundscapeStreetPreview.png"
+  },
+  "src/assets/images/SoundscapeStreetPreviewSmall.png": {
+    "file": "asset-5ffb1a55.png",
+    "src": "src/assets/images/SoundscapeStreetPreviewSmall.png"
   },
   "src/assets/images/Soundscape_Logo.svg": {
     "file": "asset-3e564385.svg",

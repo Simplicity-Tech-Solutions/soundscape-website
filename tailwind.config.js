@@ -44,7 +44,7 @@ module.exports = {
         'header-gap': '95px',
       },
       height: {
-        header: '95px',
+        header: '85px',
         'main-hero': '575px',
         'main-hero-big': '1000px',
         'phone': '400px',
