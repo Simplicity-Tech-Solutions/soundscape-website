@@ -46,7 +46,7 @@ module.exports = {
       height: {
         header: '85px',
         'main-hero': '575px',
-        'main-hero-big': '1000px',
+        'main-hero-big': '42.5vw',
         'phone': '400px',
         'section-img': '80%',
       },
