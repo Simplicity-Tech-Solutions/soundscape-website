@@ -12,6 +12,7 @@ const Header: Component = () => {
 
   const [headerItems, setHeaderItems] = createSignal([
     { name: 'Features', link: '/features', target: '_self', JSX: (<></>) },
+    { name: 'Support', link: '/support', target: '_self', JSX: (<></>) },
     { name: 'Privacy Policy', link: 'https://ialabs.ie/privacy-policy/', target: '_blank', JSX: ( <span class="screen-reader-only">(opens in a new tab)</span> ) },
   ]);
 

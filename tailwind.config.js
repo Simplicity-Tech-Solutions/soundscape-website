@@ -41,7 +41,7 @@ module.exports = {
         'hero-title-sub': '1.75rem',
       },
       margin: {
-        'header-gap': '95px',
+        'header-gap': '85px',
       },
       height: {
         header: '85px',
@@ -76,7 +76,6 @@ module.exports = {
           '100%': { transform: 'translateX(0%)' },
         },
       },
-
     },
     colors: {
       'white': '#FFFFFF',

@@ -23,6 +23,7 @@ import features3Img from "../../assets/images/Features_3.png"
 
 
 import { Marquee } from "solid-marquee"
+
                     
 function HomePage() {
   //let domain = (new URL(url));
