@@ -1,6 +1,6 @@
 {
   "index.css": {
-    "file": "asset-daa0ebca.css",
+    "file": "asset-c78213a2.css",
     "src": "index.css"
   },
   "index.html": {
@@ -34,9 +34,9 @@
       "asset-6a341264.png"
     ],
     "css": [
-      "asset-daa0ebca.css"
+      "asset-c78213a2.css"
     ],
-    "file": "main-5c8c554c.js",
+    "file": "main-d100912b.js",
     "isEntry": true,
     "src": "index.html"
   },
