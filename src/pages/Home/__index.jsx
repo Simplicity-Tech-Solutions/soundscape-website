@@ -70,7 +70,7 @@ function HomePage() {
                 <a className="h-auto w-52 bg-orange rounded-primary-btn flex justify-center items-center py-4 text-white text-lg font-semibold" href="https://www.flipcause.com/secure/cause_pdetails/MTc5NDQ1" target="_blank">Donate</a>
                 <a className="h-auto w-52 flex-col bg-navy-blue  rounded-primary-btn flex justify-center items-center py-4 text-white text-lg font-semibold" href="https://apps.apple.com/us/app/soundscape-community/id6449701760" target="_blank">
                   <span className="text-sm">Download on the</span>
-                  Apple Store
+                  App Store
                 </a>
 
               </div>
